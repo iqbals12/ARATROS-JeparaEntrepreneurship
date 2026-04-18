@@ -648,7 +648,7 @@
             <p class="section-sub fade-up" style="margin: 0 auto;">Tersedia dalam 10+ kombinasi warna eksklusif yang terinspirasi dari alam dan budaya Nusantara.</p>
             <div class="collection-grid fade-up">
                 <div class="collection-item">
-                    <img src="variants/v1_midnight.png" alt="Midnight">
+                    <img src="variants/2.png?v=final3" alt="Midnight">
                     <div class="label">Midnight</div>
                 </div>
                 <div class="collection-item">
@@ -800,7 +800,7 @@
 
     <!-- ===== NAVIGATION BAR ===== -->
     <div class="nav-bar">
-        <div class="nav-brand">_ARATROS. <span style="font-size: 0.6rem; opacity: 0.4;">v2.1</span></div>
+        <div class="nav-brand">_ARATROS. <span style="font-size: 0.6rem; opacity: 0.4;">v2.2</span></div>
         <div class="nav-dots" id="navDots"></div>
         <div class="nav-controls">
             <button class="nav-btn" id="prevBtn">←</button>
@@ -946,7 +946,8 @@
             document.body.style.overflow = 'hidden';
         }
 
-        function closeModal() {
+        function closeModal(e) {
+            if (e) e.stopPropagation();
             modal.classList.remove('active');
             document.body.style.overflow = '';
         }
@@ -959,6 +960,7 @@
         });
 
         modal.addEventListener('click', closeModal);
+        document.querySelector('.close-modal').addEventListener('click', closeModal);
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
