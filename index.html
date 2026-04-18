@@ -963,18 +963,6 @@
             if (e.key === 'Escape') closeModal();
         });
 
-        document.addEventListener('click', (e) => {
-            // Check if click is on/near images or nav
-            if (e.target.closest('.nav-bar') || 
-                e.target.closest('.dot') || 
-                e.target.closest('img') || 
-                e.target.closest('.collection-item') ||
-                (modal && modal.classList.contains('active'))) {
-                return;
-            }
-            changeSlide(1);
-        });
-
         updateUI();
     </script>
 </body>
