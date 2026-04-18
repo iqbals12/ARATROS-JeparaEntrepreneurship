@@ -942,22 +942,37 @@
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImg');
 
-        document.querySelectorAll('.img-showcase, .collection-item img').forEach(img => {
-            img.onclick = function() {
-                modal.classList.add('active');
-                modalImg.src = this.src;
-                document.body.style.overflow = 'hidden';
-            }
-        });
+        function openModal(src) {
+            modalImg.src = src;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
 
         function closeModal() {
             modal.classList.remove('active');
             document.body.style.overflow = '';
         }
 
-        modal.onclick = closeModal;
+        document.querySelectorAll('.img-showcase, .collection-item img').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent slide advancing
+                openModal(img.src);
+            });
+        });
+
+        modal.addEventListener('click', closeModal);
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
+        });
+
+        // Click anywhere to advance (excluding images and nav)
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-bar') && 
+                !e.target.closest('.dot') && 
+                !e.target.closest('img') && 
+                !modal.classList.contains('active')) {
+                changeSlide(1);
+            }
         });
 
         updateUI();
