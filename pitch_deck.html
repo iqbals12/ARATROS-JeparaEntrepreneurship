@@ -831,12 +831,28 @@
             }
         });
 
-        // Click on slide body to advance (not on nav area)
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-bar') && !e.target.closest('.collection-item') && !e.target.closest('.dot')) {
-                changeSlide(1);
+        // Touch / Swipe Navigation
+        let touchstartX = 0;
+        let touchendX = 0;
+
+        function handleSwipe() {
+            const threshold = 50;
+            if (touchendX < touchstartX - threshold) {
+                changeSlide(1); // Swipe Left -> Next
             }
-        });
+            if (touchendX > touchstartX + threshold) {
+                changeSlide(-1); // Swipe Right -> Prev
+            }
+        }
+
+        document.addEventListener('touchstart', e => {
+            touchstartX = e.changedTouches[0].screenX;
+        }, {passive: true});
+
+        document.addEventListener('touchend', e => {
+            touchendX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, {passive: true});
 
         updateUI();
     </script>
