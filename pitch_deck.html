@@ -880,6 +880,9 @@
         }
 
         function changeSlide(dir) {
+            // Guard: don't change slide if image preview is open
+            if (modal && modal.classList.contains('active')) return;
+            
             const next = current + dir;
             if (next >= 0 && next < total) {
                 goToSlide(next);
@@ -961,12 +964,15 @@
         });
 
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-bar') && 
-                !e.target.closest('.dot') && 
-                !e.target.closest('img') && 
-                !modal.classList.contains('active')) {
-                changeSlide(1);
+            // Check if click is on/near images or nav
+            if (e.target.closest('.nav-bar') || 
+                e.target.closest('.dot') || 
+                e.target.closest('img') || 
+                e.target.closest('.collection-item') ||
+                (modal && modal.classList.contains('active'))) {
+                return;
             }
+            changeSlide(1);
         });
 
         updateUI();
