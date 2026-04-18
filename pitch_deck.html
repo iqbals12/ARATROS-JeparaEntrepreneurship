@@ -436,28 +436,43 @@
 
         /* ===== MOBILE RESPONSIVENESS ===== */
         @media (max-width: 768px) {
-            .slide { padding: 40px 20px; }
-            .slide-inner { padding-bottom: 80px; }
+            body { overflow: hidden; position: fixed; } /* Prevent bounce */
+            .slide { 
+                padding: 20px 15px 80px 15px; 
+                justify-content: flex-start;
+            }
+            .slide-inner { 
+                height: auto;
+                max-height: calc(100vh - 120px);
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                padding-right: 5px;
+            }
 
-            .hero-title { font-size: 3.5rem; }
-            .section-title { font-size: 2.2rem; }
-            .section-sub { font-size: 1rem; }
+            .hero-title { font-size: 2.8rem; }
+            .section-title { font-size: 1.8rem; }
+            .section-sub { font-size: 0.95rem; }
 
-            .two-col { grid-template-columns: 1fr; gap: 30px; }
-            .two-col.reverse { direction: ltr; }
+            .two-col { grid-template-columns: 1fr; gap: 20px; }
+            .two-col.reverse { display: flex; flex-direction: column-reverse; }
 
-            .stat-grid { grid-template-columns: 1fr; }
-            .swot-grid { grid-template-columns: 1fr; }
-            .collection-grid { grid-template-columns: repeat(2, 1fr); }
+            .stat-grid { grid-template-columns: 1fr; gap: 10px; }
+            .swot-grid { grid-template-columns: 1fr; gap: 10px; }
+            .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
 
-            .nav-bar { padding: 0 15px; }
+            .nav-bar { padding: 0 10px; height: 50px; }
             .nav-brand { display: none; }
-            .nav-dots { gap: 4px; }
-            .dot { width: 6px; height: 6px; }
-            .dot.active { width: 16px; }
+            .nav-dots { gap: 3px; }
+            .dot { width: 5px; height: 5px; }
+            .dot.active { width: 12px; }
+            .nav-btn { width: 34px; height: 34px; font-size: 0.9rem; }
 
-            .closing-title { font-size: 2.5rem; }
+            .closing-title { font-size: 2rem; }
             .key-hint { display: none; }
+            
+            /* Custom scrollbar for mobile inner */
+            .slide-inner::-webkit-scrollbar { width: 3px; }
+            .slide-inner::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
         }
     </style>
 </head>
@@ -831,26 +846,32 @@
             }
         });
 
-        // Touch / Swipe Navigation
+        // Enhanced Touch / Swipe Navigation
         let touchstartX = 0;
+        let touchstartY = 0;
         let touchendX = 0;
+        let touchendY = 0;
 
         function handleSwipe() {
-            const threshold = 50;
-            if (touchendX < touchstartX - threshold) {
-                changeSlide(1); // Swipe Left -> Next
-            }
-            if (touchendX > touchstartX + threshold) {
-                changeSlide(-1); // Swipe Right -> Prev
+            const dx = touchendX - touchstartX;
+            const dy = touchendY - touchstartY;
+            const threshold = 40;
+            
+            // Only trigger if horizontal movement is greater than vertical
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > threshold) {
+                if (dx < 0) changeSlide(1); // Swipe Left -> Next
+                else changeSlide(-1); // Swipe Right -> Prev
             }
         }
 
         document.addEventListener('touchstart', e => {
-            touchstartX = e.changedTouches[0].screenX;
+            touchstartX = e.touches[0].clientX;
+            touchstartY = e.touches[0].clientY;
         }, {passive: true});
 
         document.addEventListener('touchend', e => {
-            touchendX = e.changedTouches[0].screenX;
+            touchendX = e.changedTouches[0].clientX;
+            touchendY = e.changedTouches[0].clientY;
             handleSwipe();
         }, {passive: true});
 
