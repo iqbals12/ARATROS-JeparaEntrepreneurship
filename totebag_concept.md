@@ -17,7 +17,7 @@ Kami menawarkan dua pilihan handle sesuai karakter pengguna:
 Keduanya dilengkapi **Premium Leather Wrap** untuk kenyamanan genggaman.
 
 ### 3. Konsep Kemasan (Unboxing)
-![Kemasan Premium](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/kemasan_premium.png)
+![Kemasan Premium](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/1.jpg)
 
 ### 4. Koleksi Warna (Seasonal Collection)
 Produk tersedia dalam 10+ pilihan kombinasi warna yang terinspirasi dari alam dan budaya Jepara, seperti *Midnight Executive, Nature Forest, Maritime Navy,* dan *Sunset Vibe*.
