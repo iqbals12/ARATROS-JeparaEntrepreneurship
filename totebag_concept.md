@@ -1,7 +1,7 @@
 # Konsep Produk: _ARATROS._ (V3 - Final Edition)
 
 ## Deskripsi Produk
-Totebag eksklusif yang menggabungkan kain Tenun Troso asli Jepara dengan elemen kayu jati yang diukir tangan. Produk ini mengusung konsep **"Versatile Heritage"** dengan sistem membawa ganda untuk kenyamanan dan fungsionalitas maksimal.
+Totebag eksklusif yang menggabungkan kain Tenun Troso asli Jepara dengan elemen kayu jati solid dengan finishing minimalis premium. Produk ini mengusung konsep **"Modern Minimalist Heritage"** dengan sistem membawa ganda untuk kenyamanan dan fungsionalitas maksimal.
 
 ## Visualisasi Produk
 
@@ -9,9 +9,9 @@ Totebag eksklusif yang menggabungkan kain Tenun Troso asli Jepara dengan elemen 
 ![Mockup Final 2-Way](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/mockup_final_2way.png)
 **Inovasi Utama:** Menampilkan pegangan jinjing kayu jati dan tali bahu (shoulder strap) kulit yang bisa dilepas-pasang.
 
-### 2. Inovasi Handle: Hybrid Comfort Grip
-![Handle Ergonomis](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/handle_ergonomis.png)
-Menggunakan balutan **Kulit Premium (Leather Wrap)** pada bagian genggaman kayu jati untuk kenyamanan telapak tangan.
+### 2. Iconic Minimalist Handle
+![Handle Minimalis](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/handle_minimalis.png)
+Handle tas terbuat dari **kayu jati solid** yang dipoles hingga mengkilap tanpa ukiran, menonjolkan tekstur serat kayu alami yang mewah. Bagian genggaman dilapisi **Premium Leather Wrap** untuk kenyamanan maksimal.
 
 ### 3. Konsep Kemasan (Unboxing)
 ![Kemasan Premium](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/kemasan_premium.png)

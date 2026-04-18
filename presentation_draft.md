@@ -10,7 +10,7 @@
 - **Poin Presentasi**: Perkenalan singkat tentang brand sebagai pionir tas hybrid premium dari Jepara.
 
 ## Slide 2: Masalah (The Challenge)
-- **Teks**: "Jepara Kota Ukir, Tapi Mana Oleh-Olehnya?"
+- **Teks**: "Jepara Kota Seni, Kini dalam Gaya Modern."
 - **Poin Masalah**: 
     1. Furniture jati terlalu besar untuk dibawa turis.
     2. Souvenir kain sudah terlalu umum (generic).
@@ -18,7 +18,7 @@
 
 ## Slide 3: Solusi (The Innovation)
 - **Teks**: "Aratros: The Hybrid Heritage Totebag"
-- **Poin Solusi**: Produk yang memadukan kekuatan Kanvas, keindahan Tenun Troso, dan eksklusivitas Handle Kayu Jati Ukir. Solusi praktis, estetik, dan berkelas.
+- **Poin Solusi**: Produk yang memadukan kekuatan Kanvas, keindahan Tenun Troso, dan eksklusivitas Handle Kayu Jati Polos Premium. Solusi praktis, minimalis, dan berkelas.
 
 ### 2. Detil Handle Ergonomis (Hybrid Design)
 ![Handle Ergonomis](file:///C:/Users/meyyu/.gemini/antigravity/scratch/JeparaEntrepreneurship/handle_ergonomis.png)
@@ -30,7 +30,7 @@
 - **Visual**: Foto Tas Full (2-Way Carry) dan Close-up Handle Hybrid.
 - **Poin Fitur**:
     - **2-Way Carry System**: Pilihan gaya jinjing (Formal) atau bahu (Santai).
-    - **Hybrid Handle**: Dasar kayu jati ukir dengan balutan **Leather Padding** untuk kenyamanan tangan.
+    - **Iconic Handle**: Kayu jati solid dengan finishing polesan premium, menonjolkan serat kayu alami. Balutan **Leather Padding** untuk kenyamanan genggaman maksimal.
     - **Shoulder Strap**: Tali bahu kulit yang lebar dan empuk untuk penggunaan harian.
 
 ## Slide 5: Target Pasar (The Audience)

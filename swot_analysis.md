@@ -6,7 +6,7 @@ Produk: Premium Wood-Handle Totebag (Heritage of Jepara)
 - **Desain Hybrid Unik**: Penggabungan Kanvas, Tenun Troso, dan Kayu Jati dalam satu produk.
 - **Eco-Friendly & Upcycled**: Menggunakan sisa kayu jati berkualitas tinggi dari industri furniture Jepara, memberikan nilai tambah lingkungan.
 - **Identitas Lokal Kuat**: Membawa kebanggaan budaya Jepara dengan kemasan modern (Aesthetic Heritage).
-- **Pegangan Kayu (Handle) Khas**: Ukiran tangan pada handle tas menjadi ciri khas yang sulit ditiru oleh produk pabrikan massal.
+- **Pegangan Kayu (Handle) Minimalis**: Finishing polesan halus pada handle kayu jati menonjolkan kemewahan alami kayu, memberikan kesan *Quiet Luxury* yang sedang tren.
 
 ## 2. Weaknesses (Kelemahan)
 - **Biaya Produksi**: Penggunaan bahan premium dan pengerjaan tangan (handmade) meningkatkan biaya produksi dibanding tas kain biasa.
